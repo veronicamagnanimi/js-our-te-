@@ -41,6 +41,10 @@ const teamMembers = [
 //Prelevo gli elementi dal dom 
 const teamContainerElem = document.querySelector(".team-container");
 console.log(teamContainerElem);
+const formElem = document.getElementById("add-member");
+const inputs = document.querySelectorAll("#form-add-member input");
+const [nameInput, roleInput, emailInput, imgInput] = inputs;
+console.log(formElem, inputs);
 
 
 //Funzione//
@@ -54,7 +58,7 @@ for(let i = 0; i < teamMembers.length; i++) {
 //prendo la card 
 const card = `<div class="team-card">
           <div class="card-image">
-            <img src="./img/${img} alt="${name}" />
+            <img src="./${img} alt="${name}" />
           </div>
           <div class="card-text">
             <h3>${name}</h3>
@@ -67,7 +71,7 @@ const card = `<div class="team-card">
         }
 
 //controllo
-console.log(items);
+// console.log(items);
 
 //aggiungo in html
 teamContainerElem.innerHTML = items;

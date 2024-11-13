@@ -28,11 +28,11 @@
 
       <!-- sezione card  -->
       <div class="team-container text-center">
-        <!-- <div class="team-card col-1">
+        <!-- <div class="team-card">
           <div class="card-image">
             <img src="./img/" alt="" />
           </div>
-          <div class="card-text col-2">
+          <div class="card-text">
             <h3></h3>
             <p></p>
             <a href=""></a>
@@ -40,6 +40,34 @@
         </div> -->
       </div>
       <!-- fine sezione card -->
+
+      <!-- nuovo utente  -->
+      <section class="new-member">
+        <h2 class="text-center py-5 text-danger fw-bold">New member</h2>
+        <form action="" id="add-member">
+          <div class="row pb-4">
+            <div class="col-12 col-md-3">
+              <label for="name" class="py-1">Inserisci nome e cognome</label>
+              <input id="name" type="text" placeholder="Nome e cognome" />
+            </div>
+            <div class="col-12 col-md-3">
+              <label for="email" class="py-1">Inserisci la tua email</label>
+
+              <input id="email" type="text" placeholder="Email" />
+            </div>
+            <div class="col-12 col-md-3">
+              <label for="role" class="py-1">Che ruolo hai?</label>
+              <input id="role" type="text" placeholder="Ruolo" />
+            </div>
+            <div class="col-12 col-md-3">
+              <label for="img" class="py-1">Inserisci la tua immagine</label>
+              <input id="img" type="img" placeholder="Immagine" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-danger pt-2 d-flex">Add new</button>
+        </form>
+      </section>
     </div>
 
     <script src="./script/script.js"></script>
