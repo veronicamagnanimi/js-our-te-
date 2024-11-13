@@ -81,3 +81,32 @@ teamContainerElem.innerHTML = items;
 
 //invoco la funzione
 functionTeam();
+
+
+//nuovo membro 
+formElem.addEventListener("submit", function(event) {
+ event.preventDefault();
+
+//prelevo tutti i valori
+const name = nameInput.value.trim();
+const role = roleInput.value.trim();
+const email = emailInput.value.trim();
+const img = imgInput.value.trim();
+
+const newMember = {
+  name,
+  role,
+  email,
+  img
+}
+
+
+//aggiungo il nuovo membro 
+newMember.push(teamMembers);
+
+//verifica
+console.log(teamMembers);
+
+//creo la card 
+teamContainerElem.innerHTML += createCard(newMember);
+})
