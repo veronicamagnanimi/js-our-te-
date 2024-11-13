@@ -54,14 +54,15 @@ for(let i = 0; i < teamMembers.length; i++) {
 //prendo la card 
 const card = `<div class="team-card">
           <div class="card-image">
-            <img src="/img/${img} alt="${name}" />
+            <img src="./img/${img} alt="${name}" />
           </div>
           <div class="card-text">
             <h3>${name}</h3>
             <p>${role}</p>
-            <p>${email}</p>
+            <a href="">${email}</a>
           </div>
-        </div> `;
+        </div> 
+        `;
         items += card;
         }
 
